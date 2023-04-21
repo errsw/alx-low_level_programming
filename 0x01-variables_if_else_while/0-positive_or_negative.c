@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
-#include <strdio.h>
+#include <stdio.h>
 /**
  * main - ntry point
  * Return: 0 (Success)
