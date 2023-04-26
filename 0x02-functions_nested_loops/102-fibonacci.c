@@ -16,6 +16,10 @@ int main(void)
 	{
 		z = x + y;
 		printf("%lu, ", z);
+		if (a != 47)
+		{
+			printf(", ");
+		}
 		x = y;
 		y = z;
 	}
