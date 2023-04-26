@@ -15,7 +15,7 @@ void print_times_table(int n)
 		{
 				rslt = a * b;
 				if (b == 0)
-					_putchar(rslt + '0');
+					_putchar('0');
 				else
 				{
 					_putchar(',');
