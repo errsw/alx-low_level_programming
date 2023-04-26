@@ -11,7 +11,7 @@ int main(void)
 
 	while (b < 4000000)
 	{
-		a + b = c;
+		c = a + b;
 		a = b;
 		b = c;
 		if (b % 2 == 0)
