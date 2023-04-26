@@ -40,6 +40,6 @@ void print_times_table(int n)
 					_putchar(rslt % 10 + '0');
 				}
 				if (b == n)
-					_putchar('\n')
+					_putchar('\n');
 		}
 }
