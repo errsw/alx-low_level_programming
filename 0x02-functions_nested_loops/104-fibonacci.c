@@ -7,22 +7,16 @@
 
 int main(void)
 {
-	unsigned long x = 0;
+	unsigned long x = 1;
 	unsigned long y = 1;
 	unsigned long t;
 
 	printf("%lu, ", x);
-	printf("%lu, ", y);
 
-	while (1)
+	while (y < 100000000)
 	{
-		t = x + y;
-		if (t < y)
-		{
-			break;
-		}
-
 		printf("%lu, ", t);
+		t = x + y;
 		x = y;
 		y = t;
 	}
