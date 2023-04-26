@@ -7,7 +7,7 @@
 
 int main(void)
 {
-	int x = 1, y = 2, z;
+	long long int x = 1, y = 2, z;
 	int a;
 
 	printf("%d, %d, ", x, y);
