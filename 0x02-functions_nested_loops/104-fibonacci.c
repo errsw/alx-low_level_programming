@@ -15,8 +15,8 @@ int main(void)
 
 	while (y < 100000000)
 	{
-		printf("%lu, ", t);
 		t = x + y;
+		printf("%lu, ", t);
 		x = y;
 		y = t;
 	}
