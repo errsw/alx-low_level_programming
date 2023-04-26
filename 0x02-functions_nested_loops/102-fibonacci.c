@@ -10,12 +10,12 @@ int main(void)
 	unsigned long int x = 1, y = 2, z;
 	int a;
 
-	printf("%d, %d, ", x, y);
+	printf("%lu, %lu, ", x, y);
 
 	for (a = 2; a < 50; a++)
 	{
 		z = x + y;
-		printf("%d, ", z);
+		printf("%lu, ", z);
 		x = y;
 		y = z;
 	}
