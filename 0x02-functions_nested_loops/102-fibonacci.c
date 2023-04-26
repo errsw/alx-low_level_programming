@@ -15,11 +15,7 @@ int main(void)
 	for (a = 2; a < 50; a++)
 	{
 		z = x + y;
-		printf("%lu, ", z);
-		if (a != 47)
-		{
-			printf(", ");
-		}
+		printf(", %lu", z);
 		x = y;
 		y = z;
 	}
