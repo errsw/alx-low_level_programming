@@ -1,1 +1,1 @@
- readme for moroe functions 
+read me for more functins peoject
