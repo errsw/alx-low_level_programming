@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * main - the largest prime
  * Return: 0
@@ -17,7 +16,7 @@ int main(void)
 			x = x / a;
 			if (x == 1)
 			{
-				printf("d\n", a);
+				printf("d\n", a - 1);
 				return (0);
 			}
 		}
