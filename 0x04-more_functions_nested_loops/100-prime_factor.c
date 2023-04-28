@@ -8,10 +8,10 @@
 
 int main(void)
 {
-	long a, x
+	long a, x;
 	long n = 612852475143;
 
-	for (a = 1; a <= square; a++)
+	for (a = 1; a <= sqrt(n); a++)
 	{
 		if (n % a == 0)
 		{
