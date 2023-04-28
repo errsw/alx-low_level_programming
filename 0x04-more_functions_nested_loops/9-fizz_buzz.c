@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * main - Enrty point
@@ -27,7 +28,7 @@ int main(void)
 		{
 			printf("%d ", a);
 		}
-		printf('\n');
-		return (0);
 	}
+	printf("\n");
+	return (0);
 }
