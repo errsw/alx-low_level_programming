@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <math.h>
+
 /**
  * main - the largest prime
  * Return: 0
@@ -6,19 +8,16 @@
 
 int main(void)
 {
-	long x = 612852475143;
-	int a;
+	long a, x
+	long n = 612852475143;
 
-	for (a = 2; a <= x; a++)
+	for (a = 1; a <= square; a++)
 	{
-		while (x % a == 0)
+		if (n % a == 0)
 		{
-			x = x / a;
-			if (x == 1)
-			{
-				printf("d\n", a - 1);
-				return (0);
-			}
+			x = n / a;
 		}
 	}
+	printf("%ld\n", x);
+	return (0);
 }
