@@ -12,9 +12,9 @@ int main(void)
 	char a;
 
 	srand(time(NULL));
-	while (x <= 2645)
+	while (x <= 1487)
 	{
-		a = rand() % 128;
+		a = rand() % 52;
 		x = x + a;
 		putchar(a);
 	}
