@@ -14,7 +14,7 @@ int main(void)
 	srand(time(NULL));
 	while (x <= 1487)
 	{
-		a = rand() % 52;
+		a = rand() % 94;
 		x = x + a;
 		putchar(a);
 	}
