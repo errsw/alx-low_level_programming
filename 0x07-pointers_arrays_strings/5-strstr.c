@@ -16,11 +16,11 @@ char *_strstr(char *haystack, char *needle)
 
 		while (*x == *y && *y != '\0')
 		{
-			X++;
-			Y++;
+			x++;
+			y++;
 		}
 		if (*y == '\0')
 			return (haystack);
 	}
-	return (NULL);
+	return (0);
 }
