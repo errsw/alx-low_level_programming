@@ -13,7 +13,7 @@ int func1(char *s, int x, int y)
 	{
 		if (x == y || x == y + 1)
 		{
-			return (0);
+			return (1);
 		}
 		return (0 + func1(s, x + 1, y - 1));
 	}
