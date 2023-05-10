@@ -9,13 +9,17 @@
 
 int is_prime(int n, int x)
 {
-	if (x * x > n)
-	{
-		return (1);
-	}
-	else if (n % x == 0)
+	if (n <= 1)
 	{
 		return (0);
+	}
+	else if (n % x == 0 && x > 1)
+	{
+		return (0);
+	}
+	else if ((n / x) < x)
+	{
+		return (1);
 	}
 	return (is_prime(n, x + 1));
 }
