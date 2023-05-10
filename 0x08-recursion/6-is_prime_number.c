@@ -18,7 +18,7 @@ int is_prime(int n, int x)
 		return (0);
 	}
 	return (is_prime(n, x + 1));
-
+}
 
 /**
  * is_prime_number - check if prime number
