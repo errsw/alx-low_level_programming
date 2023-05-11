@@ -9,7 +9,7 @@
 
 int wildcmp(char *s1, char *s2)
 {
-	if (*s2 == '*' && *(S2 + 1) != '\0')
+	if (*s2 == '*' && *(s2 + 1) != '\0')
 	{
 		return (0);
 	}
