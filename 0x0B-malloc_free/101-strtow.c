@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include "main.h"
-
+#include <stdio.h>
 /**
  * func - helper
  * @str: string to evaluate
@@ -46,7 +46,7 @@ char **strtow(char *str)
 	if (a == NULL)
 		return (NULL);
 
-	for (x = 0; x <= z; z++)
+	for (x = 0; x <= z; x++)
 	{
 		if (str[x] == ' ' || str[x] == '\0')
 		{
