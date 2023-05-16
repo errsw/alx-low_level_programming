@@ -36,8 +36,6 @@ char *argstostr(int ac, char **av)
 		{
 			x[c++] = '\n';
 		}
-	
 	}
-	
 	return (x);
 }
