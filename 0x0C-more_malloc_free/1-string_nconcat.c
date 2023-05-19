@@ -1,45 +1,42 @@
 #include <stdlib.h>
-#include <stdio.h>
 #include "main.h"
-
+#include <stdio.h>
 /**
- * *string_nconcat - concatenates two strings
- * @s1: string
- * @s2: string
- * @n: number of bytes
- * Return: pointer
+ * string_nconcat - concatenates two strings
+ * @s1: first string
+ * @s2: second string
+ * @n: number of bytes to concatenate from s2
+ * Return: pointer to the concatenated string, or NULL on failure
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int a = 0, b = 0, x = 0, y = 0;
-	char *str;
+	unsigned int a, b, x = 0, y = 0;
+	char *s;
 
-	while (s1 && s1[x])
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
+
+	while (s1[x] != '\0')
 		x++;
-	while (s2 && s2[y])
+	while (s2[y] != '\0')
 		y++;
 
-	if (n < y)
-		str = malloc(sizeof(char) * (x + n + 1));
-	else
-		str = malloc(sizeof(char) * (x + y + 1));
+	if (n >= y)
+		n = y;
 
-	if (!str)
+	s = malloc(sizeof(char) * (x + n + 1));
+	if (s == NULL)
 		return (NULL);
 
-	while (a < x)
-	{
-		str[a] = s1[a];
-		a++;
-	}
+	for (a = 0; a < x; a++)
+		s[a] = s1[a];
 
-	while (n < y && a < (x + n))
-		str[x++] = s2[b++];
+	for (b = 0; b < n; b++)
+		s[a + b] = s2[b];
 
-	while (n >= y && a < (x + y))
-		str[a++] = s2[b++];
+	s[a + b] = '\0';
 
-	str[a] = '\0';
-
-	return (str);
+	return (s);
 }
