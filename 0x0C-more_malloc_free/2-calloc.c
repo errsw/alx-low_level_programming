@@ -38,7 +38,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (x == NULL)
 		return (NULL);
 
-	_memset(x, 0, nmemb * size);
+	func(x, 0, nmemb * size);
 
 	return (x);
 }
