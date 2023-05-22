@@ -30,16 +30,16 @@ char *_strcpy(char *a, char *b)
 
 	y = 0;
 
-	while (src[y] != '\0')
+	while (b[y] != '\0')
 	{
 		y++;
 	}
 	for (x = 0; x < y; x++)
 	{
-		dest[x] = src[x];
+		a[x] = b[x];
 	}
-	dest[x] = '\0';
-	return (y);
+	a[x] = '\0';
+	return (a);
 }
 /**
 * new_dog - creates a new dog
