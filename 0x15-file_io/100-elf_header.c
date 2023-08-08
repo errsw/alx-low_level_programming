@@ -19,15 +19,14 @@ void _type(unsigned int t, unsigned char *p);
 
 /**
  * main - entry
- *@ac: numbers of arg
  *@av: vector of arg
  *Return: 0
  */
 
-int main(int ac, char *av[])
+int main(char *av[])
 {
-	Elf64_Ehdr *h;
-	int x, y;
+	Elf64_Ehdr *h = NULL;
+	int x = -1, y;
 
 	if (h == NULL)
 	{
